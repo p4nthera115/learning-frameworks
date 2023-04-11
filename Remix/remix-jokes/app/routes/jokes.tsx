@@ -40,7 +40,7 @@ export default function JokesRoute() {
             <ul>
               {data.jokes.map((joke) => (
                 <li>
-                  <Link key={joke.id} to={joke.name}>
+                  <Link key={joke.id} to={joke.id}>
                     {joke.name}
                   </Link>
                 </li>
