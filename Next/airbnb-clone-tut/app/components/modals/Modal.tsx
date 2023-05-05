@@ -42,7 +42,7 @@ const Modal: React.FC<ModalProps> = ({
 
     setShowModal(false);
     setTimeout(() => {
-      onClose;
+      onClose();
     }, 300);
   }, [disabled, onClose]);
 
@@ -89,7 +89,8 @@ const Modal: React.FC<ModalProps> = ({
             w-full
             sm:w-4/6
             lg:w-3/6
-            xl:w-2/5my-6
+            xl:w-2/5
+            my-6
             mx-auto
             h-full
             lg:h-auto
@@ -103,7 +104,7 @@ const Modal: React.FC<ModalProps> = ({
               duration-300
               h-full
               ${showModal ? "translate-y-0" : "translate-y-full"}
-              ${showModal ? "translate-y-0" : "translate-y-full"}
+              ${showModal ? "opacity-100" : "opacity-0"}
             `}
           >
             <div
@@ -155,7 +156,7 @@ const Modal: React.FC<ModalProps> = ({
               <div>
                 <div className="relative p-6 flex-auto">{body}</div>
               </div>
-              {/* HEADER */}
+              {/* FOOTER */}
               <div className="flex flex-col gap-2 p-6">
                 <div
                   className="
@@ -181,6 +182,7 @@ const Modal: React.FC<ModalProps> = ({
                     onClick={handleSubmit}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
