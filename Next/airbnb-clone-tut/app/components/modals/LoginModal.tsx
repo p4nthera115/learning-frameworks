@@ -112,21 +112,21 @@ const LoginModal = () => {
       >
         <div
           className="
-          flex 
-          flex-row
-          items-center
-          justify-center 
-          gap-2
-        "
+            flex 
+            flex-row
+            items-center
+            justify-center 
+            gap-2
+          "
         >
           <div>First time using Airbnb?</div>
           <div
             onClick={toggle}
             className="
-            text-neutral-800
-            cursor-pointer
-            hover:underline
-          "
+              text-neutral-800
+              cursor-pointer
+              hover:underline
+            "
           >
             Create an account
           </div>
