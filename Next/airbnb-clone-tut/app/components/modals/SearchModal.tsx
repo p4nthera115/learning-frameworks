@@ -24,8 +24,8 @@ const SearchModal = () => {
   const params = useSearchParams();
   const searchModal = useSearchModal();
 
-  const [location, setLocation] = useState<CountrySelectValue>();
   const [step, setStep] = useState(STEPS.LOCATION);
+  const [location, setLocation] = useState<CountrySelectValue>();
   const [guestCount, setGuestCount] = useState(1);
   const [roomCount, setRoomCount] = useState(1);
   const [bathroomCount, setBathroomCount] = useState(1);
@@ -113,7 +113,7 @@ const SearchModal = () => {
     }
 
     return "Back";
-  }, []);
+  }, [step]);
 
   let bodyContent = (
     <div className="flex flex-col gap-8">
