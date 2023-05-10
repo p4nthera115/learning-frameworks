@@ -55,7 +55,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
 
   const onCreateReservation = useCallback(() => {
     if (!currentUser) {
-      return loginModal.onOpen;
+      return loginModal.onOpen();
     }
 
     setIsLoading(true);
