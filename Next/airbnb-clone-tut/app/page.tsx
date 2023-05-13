@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 import EmptyState from "./components/EmptyState";
 import ClientOnly from "./components/ClientOnly";
